@@ -1,0 +1,118 @@
+/* Products section styles - focused, lightweight enhancements */
+.products {
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  padding: 56px 0;
+}
+.products .section-title h2 {
+  color: #0d6efd; /* primary blue */
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+.products .section-title p {
+  color: #6c757d;
+  margin-bottom: 28px;
+}
+.product-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 28px;
+  border: 1px solid rgba(13,110,253,0.06);
+  box-shadow: 0 10px 30px rgba(13,110,253,0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(13,110,253,0.09);
+}
+.product-card .lead {
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.product-card h4 {
+  color: #0b5ed7;
+  margin-top: 14px;
+  margin-bottom: 6px;
+}
+.product-card .muted {
+  color: #6c757d;
+}
+.product-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 8px 0;
+  color: #222222;
+}
+.product-list li i.bi-check2-circle {
+  color: #0d6efd;
+  font-size: 1.2rem;
+  margin-top: 0.18rem;
+}
+.product-list li strong {
+  color: #0b5ed7;
+}
+/* Product card grid & variant styles */
+.product-grid .product-variant {
+  border: none;
+  border-radius: 12px;
+}
+.product-variant .card-body {
+  padding: 18px;
+}
+.variant-icon {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(13,110,253,0.08);
+  color: #0d6efd;
+  border-radius: 10px;
+  font-size: 1.25rem;
+}
+.product-variant h5 {
+  color: #0b5ed7;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+.product-variant p.small {
+  color: #596275;
+}
+.product-variant .btn {
+  padding: 6px 10px;
+  font-size: 0.82rem;
+}
+.product-variant .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+.product-variant .btn-outline-primary {
+  color: #0d6efd;
+  border-color: rgba(13,110,253,0.16);
+}
+.product-variant:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(13,110,253,0.06);
+}
+/* subtle divider between the two cards on larger screens */
+@media (min-width: 992px) {
+  .products .row {
+    align-items: start;
+  }
+  .products .col-lg-6:first-child {
+    padding-right: 24px;
+  }
+  .products .col-lg-6:last-child {
+    padding-left: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .product-card {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .products {
+    padding: 36px 0;
+  }
+}
