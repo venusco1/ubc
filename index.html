@@ -3,7 +3,7 @@
 
 <head>
 
-  <!-- Basic Meta Tags -->
+<!-- Basic Meta Tags -->
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>United Boards & Chem | Plywood Manufacturers in Kasaragod, Kerala</title>
@@ -17,7 +17,7 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:title" content="United Boards & Chem | Plywood Manufacturers in Kasaragod, Kerala">
 <meta property="og:description" content="Trusted plywood manufacturer in Kasaragod, Kerala offering premium Ocuma and Gurjan plywood products for furniture, interiors, and construction projects.">
-<meta property="og:image" content="https://unitedboardsandchem.com/img/og-image.jpg">
+<meta property="og:image" content="assets/img/apple-touch-icon.png">
 <meta property="og:url" content="https://unitedboardsandchem.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="United Boards & Chem">
@@ -26,11 +26,11 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="United Boards & Chem | Plywood Manufacturers in Kasaragod, Kerala">
 <meta name="twitter:description" content="Premium plywood manufacturer in Kasaragod, Kerala – Ocuma & Gurjan plywood for interiors, furniture, and construction.">
-<meta name="twitter:image" content="https://unitedboardsandchem.com/img/og-image.jpg">
+<meta name="twitter:image" content="assets/img/apple-touch-icon.png">
 
 <!-- Favicon & Icons -->
-<link rel="icon" href="https://unitedboardsandchem.com/img/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="https://unitedboardsandchem.com/img/apple-touch-icon.png">
+<link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
 <!-- Robots & SEO Indexing -->
 <meta name="robots" content="index, follow">
@@ -43,10 +43,6 @@
 <meta name="geo.placename" content="Kasaragod, Kerala, India">
 <meta name="geo.position" content="12.5;75.0">
 <meta name="ICBM" content="12.5, 75.0">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -156,73 +152,110 @@
 
   <header id="header" class="header sticky-top">
 
-    <div class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center gap-3 social-links">
-          <!-- Click to call dropdown for two numbers + social links -->
-          <div class="dropdown d-flex align-items-center">
-            <a class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" href="#" id="callDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-telephone-fill"></i>
-              <!-- <span class="ms-2 d-none d-md-inline">Call</span> -->
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="callDropdown">
-              <li><a class="dropdown-item text-black my-2" href="tel:+919447725528">+91 94477 25528</a></li>
-              <li><a class="dropdown-item text-black mb-2 mt-3" href="tel:+919447123828">+91 94471 23828</a></li>
-            </ul>
-          </div>
+<!-- Topbar (Bootstrap 5) -->
+<style>
+  /* small custom tweaks */
+  .topbar { background: #0d6efd; color: #fff; font-size: 0.95rem; }
+  .topbar a { color: #fff; }
+  .topbar .social-links > * { gap: .6rem; display: inline-flex; align-items:center; }
+  .topbar .icon { font-size: 1.05rem; margin-right: .35rem; display: inline-flex; align-items:center; }
+  .topbar .dropdown-toggle::after { margin-left: .25rem; }
+  .topbar .dropdown-menu .dropdown-item { padding-top:.45rem; padding-bottom:.45rem; }
+  @media (max-width:575.98px){
+    .topbar .container { padding-left: .75rem; padding-right: .75rem; }
+  }
+</style>
 
-          <!-- Messaging & Social -->
-          <a href="https://wa.me/919745601881" class="whatsapp d-flex align-items-center text-white" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp"><i class="bi bi-whatsapp"></i><span class="visually-hidden">WhatsApp</span></a>
-          <a href="" class="facebook d-flex align-items-center text-white" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="bi bi-facebook"></i><span class="visually-hidden">Facebook</span></a>
-          <a href="https://www.instagram.com" class="instagram d-flex align-items-center text-white" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="bi bi-instagram"></i><span class="visually-hidden">Instagram</span></a>
-          <a href="https://search.google.com" class="google d-flex align-items-center text-white" target="_blank" rel="noopener noreferrer" title="Leave a Google Review"><i class="bi bi-google"></i><span class="visually-hidden">Google</span></a>
-          <a href="https://www.google.com/maps?q=12.5,75.0" class="google d-flex align-items-center text-white" target="_blank" rel="noopener noreferrer" title="Open location on Google Maps"><i class="bi bi-geo-alt-fill"></i><span class="visually-hidden">Map</span></a>
-        </div>
+<div class="topbar d-flex align-items-center">
+  <div class="container d-flex justify-content-center justify-content-md-between align-items-center py-2">
+    <!-- Left area: Contact / phones -->
+    <div class="d-flex align-items-center">
+      <!-- Click-to-call dropdown -->
+      <div class="dropdown me-3">
+        <a class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" href="#" id="callDropdown"
+           role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+          <i class="bi bi-telephone-fill icon" aria-hidden="true"></i>
+          <span class="d-none d-md-inline">Call</span>
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="callDropdown">
+          <li><a class="dropdown-item text-dark" href="tel:+919745601881">+91 97456 01881</a></li>
+          <li><a class="dropdown-item text-dark" href="tel:+919633482924">+91 96334 82924</a></li>
+        </ul>
       </div>
-    </div><!-- End Top Bar -->
+
+      <!-- Optional short text (visible on md+) -->
+      <div class="d-none d-md-block text-white small">
+        We're here to help — reach us by call or WhatsApp
+      </div>
+    </div>
+
+    <!-- Right area: Messaging & Social icons -->
+    <div class="contact-info d-flex align-items-center social-links">
+      <a href="https://wa.me/919745601881" class="d-inline-flex align-items-center text-white text-decoration-none" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+        <i class="bi bi-whatsapp icon" aria-hidden="true"></i><span class="visually-hidden">WhatsApp</span>
+      </a>
+
+      <a href="https://www.facebook.com" class="d-inline-flex align-items-center text-white text-decoration-none" target="_blank" rel="noopener noreferrer" title="Facebook">
+        <i class="bi bi-facebook icon" aria-hidden="true"></i><span class="visually-hidden">Facebook</span>
+      </a>
+
+      <a href="https://www.instagram.com" class="d-inline-flex align-items-center text-white text-decoration-none" target="_blank" rel="noopener noreferrer" title="Instagram">
+        <i class="bi bi-instagram icon" aria-hidden="true"></i><span class="visually-hidden">Instagram</span>
+      </a>
+
+      <!-- <a href="https://search.google.com" class="d-inline-flex align-items-center text-white text-decoration-none" target="_blank" rel="noopener noreferrer" title="Leave a Google Review">
+        <i class="bi bi-google icon" aria-hidden="true"></i><span class="visually-hidden">Google</span>
+      </a> -->
+
+      <a href="https://share.google/y52fXuy17uaebeZFi" class="d-inline-flex align-items-center text-white text-decoration-none" target="_blank" rel="noopener noreferrer" title="Open location on Google Maps">
+        <i class="bi bi-geo-alt-fill icon" aria-hidden="true"></i>
+        <span class="visually-hidden">Map</span>
+      </a>
+
+    </div>
+  </div>
+</div>
+
 
     <div class="branding d-flex align-items-cente">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <img src="assets/img/logo.png" alt="">
           <h1 class="sitename">UBC</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#hero" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-                        <li class="dropdown"><a href="#"><span>Produts</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li><a href="index.html#hero" class="active">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-
                 <li class="dropdown"><a href="#"><span>Ocuma Series</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
-                    <li><a href="#">Ocuma Semi Commercial</a></li>
-                    <li><a href="#">Ocuma Semi Dipping</a></li>
-                    <li><a href="#">Ocuma Alternate Commercial</a></li>
-                    <li><a href="#">Ocuma Alternate Dipping</a></li>
+                      <li><a href="ocuma.html#ocuma-semi-commercial">Ocuma Semi Commercial</a></li>
+                      <li><a href="ocuma.html#ocuma-semi-dipping">Ocuma Semi Dipping</a></li>
+                      <li><a href="ocuma.html#ocuma-alternate-commercial">Ocuma Alternate Commercial</a></li>
+                      <li><a href="ocuma.html#ocuma-alternate-dipping">Ocuma Alternate Dipping</a></li>
                   </ul>
                 </li>
 
                 <li class="dropdown"><a href="#"><span>Gurjan Series</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
-                    <li><a href="#">Gurjan Semi Commercial</a></li>
-                    <li><a href="#">Gurjan Semi Dipping</a></li>
-                    <li><a href="#">Gurjan Alternate Commercial</a></li>
-                    <li><a href="#">Gurjan Alternate Dipping</a></li>
-                    <li><a href="#">Gurjan Full Red Commercial</a></li>
-                    <li><a href="#">Gurjan Full Red Dipping</a></li>
+                    <li><a href="gurjan.html#gurjan-semi-commercial">Gurjan Semi Commercial</a></li>
+                    <li><a href="gurjan.html#gurjan-semi-dipping">Gurjan Semi Dipping</a></li>
+                    <li><a href="gurjan.html#gurjan-alternate-commercial">Gurjan Alternate Commercial</a></li>
+                    <li><a href="gurjan.html#gurjan-alternate-dipping">Gurjan Alternate Dipping</a></li>
+                    <li><a href="gurjan.html#gurjan-full-red-commercial">Gurjan Full Red Commercial</a></li>
+                    <li><a href="gurjan.html#gurjan-full-red-dipping">Gurjan Full Red Dipping</a></li>
                   </ul>
                 </li>
-
               </ul>
             </li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -240,11 +273,11 @@
 
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start" data-aos="zoom-out">
+          <div class="col-lg-12 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start" data-aos="zoom-out">
             <h1>Welcome to <br><span>United Boards & Chem</span></h1>
 
             <!-- Hero text carousel (3 messages) -->
-            <div id="heroTextCarousel" class="carousel slide w-100 my-3" data-bs-ride="carousel" data-bs-interval="4500" aria-label="Hero messages">
+            <div id="heroTextCarousel" class="carousel slide w-100 my-3 px-3" data-bs-ride="carousel" data-bs-interval="4500" aria-label="Hero messages">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <p class="lead mb-3">Premium-quality plywood products with precision and care.</p>
@@ -261,8 +294,9 @@
             </div>
 
             <div class="d-flex justify-content-center justify-content-lg-start">
-              <a href="#products" class="btn-get-started me-3">Explore More</a>
-              <a href="https://www.youtube.com" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span class="ms-2">Watch Video</span></a>
+              <a href="index.html#products" class="btn-get-started me-3">Explore More</a>
+              <a href="index.html#contact" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-telephone"></i><span class="ms-3">Contact Us</span></a>
+              <!-- <a href="https://www.youtube.com" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span class="ms-2">Watch Video</span></a> -->
             </div>
           </div>
         </div>
@@ -275,24 +309,27 @@
     <section id="about" class="about section light-background mt-0">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p><span>Find Out More</span> <span class="description-title">About Us</span></p>
+      <div class="container" data-aos="fade-up">
+            <div class="section-title">
+              <h2>Who We Are</h2>
+              <p><span>About</span> <span class="description-title">United Boards & Chem</span></p>
+          </div>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-3">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6 d-flex flex-column justify-content-center mt-3" data-aos="fade-up" data-aos-delay="200">
             <img src="assets/img/about.png" alt="" class="img-fluid">
           </div>
 
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 d-flex flex-column justify-content-center mt-3" data-aos="fade-up" data-aos-delay="200">
             <div class="about-content ps-0 ps-lg-3">
               <h3 class="mt-4 mt-md-0 text-center">Premium Plywoods in Kasaragod, Kerala</h3>
-              <p class="px-3" style="text-align: justify;">
-                Founded with a vision to deliver reliable, high-performance plywood, United Boards & Chem has become a trusted name for builders, contractors, and furniture makers across South India. Our Ocuma and Gurjan plywood ranges are crafted from carefully selected hardwood veneers and undergo strict quality checks, ensuring every sheet delivers unmatched strength, durability, and precision.
+              <p class="px-3 mt-3" style="text-align: justify;">
+                Founded with a vision to deliver reliable, high-performance plywood, United Boards & Chem has become a trusted name for builders, 
+                contractors, and furniture makers across South India. Our Ocuma and Gurjan plywood ranges are crafted from carefully selected hardwood 
+                veneers and undergo strict quality checks, ensuring every sheet delivers unmatched strength, durability, and precision.
               </p>
               <ul>
                 <li class="px-3">
@@ -306,15 +343,17 @@
                   <i class="bi bi-shield-check"></i>
                   <div>
                     <h4>Durable &amp; Moisture-Resistant</h4>
-                    <p style="text-align: justify;">Advanced dipping and pressing processes enhance moisture resistance and dimensional stability for reliable performance in real-world conditions.</p>
+                    <p style="text-align: justify;">Advanced dipping and pressing processes enhance moisture resistance 
+                      and dimensional stability for reliable performance in real-world conditions.</p>
                   </div>
                 </li>
               </ul>
-              <p class="px-3" style="text-align: justify;">
-                Driven by a passion for craftsmanship and customer satisfaction, we ensure that every Semi Commercial, Dipping, and Alternate plywood sheet meets the highest standards — supporting your projects with confidence and lasting performance.
-              </p>
+                  <div class="d-flex justify-content-center mt-4 mt-lg-0">
+                    <a href="about.html" class="btn btn-outline-primary px-4 py-2 fw-semibold rounded-pill shadow-sm hover-scale">
+                      <i class="bi bi-info-circle me-2"></i> More About Us
+                    </a>
+                  </div>
             </div>
-
           </div>
         </div>
 
@@ -454,9 +493,23 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-            <p class="lead text-center fs-6">At United Boards &amp; Chem, we craft premium-quality plywood trusted by builders, furniture makers, and interior designers across South India. Each sheet is engineered with precision using carefully selected hardwood veneers and advanced bonding technology to deliver long-lasting performance.</p>
-            <div class="product-card mt-4">
-              <h4 class="mt-4 text-center"><b>Ocuma Series</b></h4>
+            <p class="lead fs-6 mx-3" style="text-align: justify;">At United Boards &amp; Chem, we craft premium-quality plywood trusted by builders, furniture makers, and interior designers across South India. Each sheet is engineered with precision using carefully selected hardwood veneers and advanced bonding technology to deliver long-lasting performance.</p>
+        
+            <!-- Product Category Buttons -->
+            <div class="d-flex justify-content-center gap-3 mt-5 mb-3 flex-wrap" data-aos="zoom-in" data-aos-delay="150">
+              <a href="ocuma.html" class="btn btn-primary px-4 py-2 fw-semibold rounded-pill shadow-sm hover-scale">
+                <i class="bi bi-layers me-2"></i> Show Ocuma Series Plywood
+              </a>
+              <a href="gurjan.html" class="btn btn-outline-primary px-4 py-2 fw-semibold rounded-pill shadow-sm hover-scale">
+                <i class="bi bi-collection me-2"></i> Show Gurjan Series Plywood
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card mt-4">
+        <h4 class="mt-4 text-center"><b>Ocuma Series</b></h4>
               <p class="muted text-center">The Ocuma range combines strength and smooth finishing, perfect for modern interiors and commercial spaces.</p>
 
               <div class="product-grid row g-3 mt-4">
@@ -467,10 +520,13 @@
                         <h5 class="mb-1">Ocuma Semi Commercial</h5>
                         <p class="small mb-2">A versatile choice offering durability and value, ideal for furniture and paneling.</p>
                           <div class="d-flex justify-content-start flex-wrap gap-2 mt-3">
-                            <a href="#" class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
+                            <a href="https://wa.me/919745601881?text=Hello%20United%20Boards%20%26%20Chem,%0AI%20would%20like%20to%20request%20a%20quote%20for%20*Ocuma%20Semi%20Commercial*%20plywood.%0APlease%20share%20more%20details.%20Thank%20you!"
+                              target="_blank"
+                              class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
                               <i class="bi bi-clipboard-check me-1"></i> Request Quote
                             </a>
-                            <a href="#" class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
+                            <a href="ocuma.html#ocuma-semi-commercial"
+                              class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
                               <i class="bi bi-info-circle me-1"></i> Learn More
                             </a>
                           </div>
@@ -478,6 +534,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="col-12 col-md-6">
                   <div class="card product-variant h-100">
                     <div class="card-body d-flex align-items-start">
@@ -485,10 +542,13 @@
                         <h5 class="mb-1">Ocuma Semi Dipping</h5>
                         <p class="small mb-2">Enhanced with protective treatment for better resistance to moisture and termites.</p>
                           <div class="d-flex justify-content-start flex-wrap gap-2 mt-3">
-                            <a href="#" class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
+                            <a href="https://wa.me/919745601881?text=Hello%20United%20Boards%20%26%20Chem,%0AI%20would%20like%20to%20request%20a%20quote%20for%20*Ocuma%20Semi%20Dipping*%20plywood.%0APlease%20share%20more%20details.%20Thank%20you!"
+                              target="_blank"
+                              class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
                               <i class="bi bi-clipboard-check me-1"></i> Request Quote
                             </a>
-                            <a href="#" class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
+                            <a href="ocuma.html#ocuma-semi-dipping"
+                              class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
                               <i class="bi bi-info-circle me-1"></i> Learn More
                             </a>
                           </div>
@@ -496,6 +556,7 @@
                     </div>
                   </div>
                 </div>
+                
                 <div class="col-12 col-md-6">
                   <div class="card product-variant h-100">
                     <div class="card-body d-flex align-items-start">
@@ -503,10 +564,13 @@
                         <h5 class="mb-1">Ocuma Alternate Commercial</h5>
                         <p class="small mb-2">Balanced construction using alternate hardwood layers for improved stability.</p>
                           <div class="d-flex justify-content-start flex-wrap gap-2 mt-3">
-                            <a href="#" class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
+                            <a href="https://wa.me/919745601881?text=Hello%20United%20Boards%20%26%20Chem,%0AI%20would%20like%20to%20request%20a%20quote%20for%20*Ocuma%20Alternate%20Commercial*%20plywood.%0APlease%20share%20more%20details.%20Thank%20you!"
+                              target="_blank"
+                              class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
                               <i class="bi bi-clipboard-check me-1"></i> Request Quote
                             </a>
-                            <a href="#" class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
+                            <a href="ocuma.html#ocuma-alternate-commercial"
+                              class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
                               <i class="bi bi-info-circle me-1"></i> Learn More
                             </a>
                           </div>
@@ -521,10 +585,13 @@
                         <h5 class="mb-1">Ocuma Alternate Dipping</h5>
                         <p class="small mb-2">Chemically treated for higher endurance in humid or challenging environments.</p>
                           <div class="d-flex justify-content-start flex-wrap gap-2 mt-3">
-                            <a href="#" class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
+                            <a href="https://wa.me/919745601881?text=Hello%20United%20Boards%20%26%20Chem,%0AI%20would%20like%20to%20request%20a%20quote%20for%20*Ocuma%20Alternate%20Dipping*%20plywood.%0APlease%20share%20more%20details.%20Thank%20you!"
+                              target="_blank"
+                              class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
                               <i class="bi bi-clipboard-check me-1"></i> Request Quote
                             </a>
-                            <a href="#" class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
+                            <a href="ocuma.html#ocuma-alternate-dipping"
+                              class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
                               <i class="bi bi-info-circle me-1"></i> Learn More
                             </a>
                           </div>
@@ -549,10 +616,13 @@
                           <h5 class="mb-1">Gurjan Semi Commercial</h5>
                           <p class="small mb-2">Crafted with selected hardwood veneers, offering excellent strength for daily use.</p>
                           <div class="d-flex justify-content-start flex-wrap gap-2 mt-3">
-                            <a href="#" class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
+                            <a href="https://wa.me/919745601881?text=Hello%20United%20Boards%20%26%20Chem,%0AI%20would%20like%20to%20request%20a%20quote%20for%20*Gurjan%20Semi%20Commercial*%20plywood.%0APlease%20share%20more%20details.%20Thank%20you!"
+                              target="_blank"
+                              class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
                               <i class="bi bi-clipboard-check me-1"></i> Request Quote
                             </a>
-                            <a href="#" class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
+                            <a href="gurjan.html#gurjan-semi-commercial"
+                              class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
                               <i class="bi bi-info-circle me-1"></i> Learn More
                             </a>
                           </div>
@@ -560,17 +630,20 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6">
+                  <div class="col-12 col-md-6 mt-5">
                     <div class="card product-variant h-100">
                       <div class="card-body d-flex align-items-start">
                         <div>
                           <h5 class="mb-1">Gurjan Semi Dipping</h5>
                           <p class="small mb-2">Surface-treated for enhanced protection against insects and damp conditions.</p>
                           <div class="d-flex justify-content-start flex-wrap gap-2 mt-3">
-                            <a href="#" class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
+                            <a href="https://wa.me/919745601881?text=Hello%20United%20Boards%20%26%20Chem,%0AI%20would%20like%20to%20request%20a%20quote%20for%20*Gurjan%20Semi%20Dipping*%20plywood.%0APlease%20share%20more%20details.%20Thank%20you!"
+                              target="_blank"
+                              class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
                               <i class="bi bi-clipboard-check me-1"></i> Request Quote
                             </a>
-                            <a href="#" class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
+                            <a href="gurjan.html#gurjan-semi-dipping"
+                              class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
                               <i class="bi bi-info-circle me-1"></i> Learn More
                             </a>
                           </div>
@@ -585,10 +658,13 @@
                           <h5 class="mb-1">Gurjan Alternate Commercial</h5>
                           <p class="small mb-2">Built with alternate hardwood cores for structural balance and durability.</p>
                           <div class="d-flex justify-content-start flex-wrap gap-2 mt-3">
-                            <a href="#" class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
+                            <a href="https://wa.me/919745601881?text=Hello%20United%20Boards%20%26%20Chem,%0AI%20would%20like%20to%20request%20a%20quote%20for%20*Gurjan%20Alternate%20Commercial*%20plywood.%0APlease%20share%20more%20details.%20Thank%20you!"
+                              target="_blank"
+                              class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
                               <i class="bi bi-clipboard-check me-1"></i> Request Quote
                             </a>
-                            <a href="#" class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
+                            <a href="gurjan.html#gurjan-alternate-commercial"
+                              class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
                               <i class="bi bi-info-circle me-1"></i> Learn More
                             </a>
                           </div>
@@ -603,10 +679,13 @@
                           <h5 class="mb-1">Gurjan Alternate Dipping</h5>
                           <p class="small mb-2">Fully treated plywood designed to withstand moisture; ideal for kitchens and commercial projects.</p>
                           <div class="d-flex justify-content-start flex-wrap gap-2 mt-3">
-                            <a href="#" class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
+                            <a href="https://wa.me/919745601881?text=Hello%20United%20Boards%20%26%20Chem,%0AI%20would%20like%20to%20request%20a%20quote%20for%20*Gurjan%20Alternate%20Dipping*%20plywood.%0APlease%20share%20more%20details.%20Thank%20you!"
+                              target="_blank"
+                              class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
                               <i class="bi bi-clipboard-check me-1"></i> Request Quote
                             </a>
-                            <a href="#" class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
+                            <a href="gurjan.html#gurjan-alternate-dipping"
+                              class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
                               <i class="bi bi-info-circle me-1"></i> Learn More
                             </a>
                           </div>
@@ -621,10 +700,13 @@
                           <h5 class="mb-1">Gurjan Full Red Commercial</h5>
                           <p class="small mb-2">Premium full red hardwood plywood for superior strength and long-lasting performance.</p>
                           <div class="d-flex justify-content-start flex-wrap gap-2 mt-3">
-                            <a href="#" class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
+                            <a href="https://wa.me/919745601881?text=Hello%20United%20Boards%20%26%20Chem,%0AI%20would%20like%20to%20request%20a%20quote%20for%20*Gurjan%20Full%20Red%20Commercial*%20plywood.%0APlease%20share%20more%20details.%20Thank%20you!"
+                              target="_blank"
+                              class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
                               <i class="bi bi-clipboard-check me-1"></i> Request Quote
                             </a>
-                            <a href="#" class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
+                            <a href="gurjan.html#gurjan-full-red-commercial"
+                              class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
                               <i class="bi bi-info-circle me-1"></i> Learn More
                             </a>
                           </div>
@@ -639,10 +721,13 @@
                           <h5 class="mb-1">Gurjan Full Red Dipping</h5>
                           <p class="small mb-2">Fully treated full red plywood, perfect for high-moisture and commercial applications.</p>
                           <div class="d-flex justify-content-start flex-wrap gap-2 mt-3">
-                            <a href="#" class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
+                            <a href="https://wa.me/919745601881?text=Hello%20United%20Boards%20%26%20Chem,%0AI%20would%20like%20to%20request%20a%20quote%20for%20*Gurjan%20Full%20Red%20Dipping*%20plywood.%0APlease%20share%20more%20details.%20Thank%20you!"
+                              target="_blank"
+                              class="btn btn-primary btn-sm px-4 py-2 shadow-sm">
                               <i class="bi bi-clipboard-check me-1"></i> Request Quote
                             </a>
-                            <a href="#" class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
+                            <a href="gurjan.html#gurjan-full-red-dipping"
+                              class="btn btn-outline-primary btn-sm px-4 py-2 shadow-sm custom-outline-btn">
                               <i class="bi bi-info-circle me-1"></i> Learn More
                             </a>
                           </div>
@@ -741,70 +826,111 @@
 
 <!-- Quality & Certification Section -->
 <section id="quality" class="quality section light-background">
-
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Quality & Certification</h2>
     <p>
-      <span>Committed to</span> 
+      <span>Committed to</span>
       <span class="description-title">Excellence & Sustainability</span>
     </p>
-  </div><!-- End Section Title -->
+  </div>
+  <!-- End Section Title -->
 
-  <div class="container">
-    <div class="row gy-4 text-center">
-          <p class="text-justify mt-0">
-      At United Boards & Chem, we are committed to producing plywood that is not only strong and durable but also environmentally responsible. Every sheet reflects our dedication to certified, sustainable, and high-quality manufacturing practices.
-    </p>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row justify-content-center gy-4">
+
+      <div class="col-lg-10">
+        <p class="text-center mb-5" style="text-align: justify;">
+          At <strong>United Boards &amp; Chem</strong>, quality is more than a promise — it’s our foundation. 
+          Every sheet we manufacture reflects precision, strength, and environmental responsibility. 
+          From certified standards to sustainable practices, we ensure our plywood meets the highest levels 
+          of performance and reliability.
+        </p>
+      </div>
+
       <!-- ISI Certified -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-        <div class="team-member p-4 shadow-sm bg-white rounded-3 w-100">
-          <div class="member-img mb-3">
-            <img src="assets/img/cert-isi.jpg" alt="" width="100">
+      <div class="col-lg-4 col-md-6">
+        <div class="quality-card h-100 text-center p-4 bg-white shadow-sm rounded-4 hover-scale" data-aos="fade-up" data-aos-delay="150">
+          <div class="quality-icon mb-3">
+            <img src="assets/img/cert-isi.jpg" alt="ISI Certification" class="rounded-circle shadow-sm" width="90" height="90">
           </div>
-          <div class="member-info">
-            <h4>ISI Certified</h4>
-            <p class="mb-0">
-              Plywood available in MR, BWR, and BWP grades, meeting all Indian Standards.
-            </p>
-          </div>
+          <h4 class="fw-semibold mb-2">ISI Certified</h4>
+          <p class="mb-0 small text-muted">
+            Plywood available in MR, BWR, and BWP grades — meeting all Indian Standards for performance and safety.
+          </p>
         </div>
-      </div><!-- End ISI Certified -->
+      </div>
+      <!-- End ISI Certified -->
 
       <!-- ISO Standards -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-        <div class="team-member p-4 shadow-sm bg-white rounded-3 w-100">
-          <div class="member-img mb-3">
-            <img src="assets/img/cert-iso.jpg" alt="" width="100">
+      <div class="col-lg-4 col-md-6">
+        <div class="quality-card h-100 text-center p-4 bg-white shadow-sm rounded-4 hover-scale" data-aos="fade-up" data-aos-delay="250">
+          <div class="quality-icon mb-3">
+            <img src="assets/img/cert-iso.jpg" alt="ISO Certification" class="rounded-circle shadow-sm" width="90" height="90">
           </div>
-          <div class="member-info">
-            <h4>ISO Standards</h4>
-            <p class="mb-0">
-              Manufactured under ISO-certified quality and production processes.
-            </p>
-          </div>
+          <h4 class="fw-semibold mb-2">ISO Standards</h4>
+          <p class="mb-0 small text-muted">
+            Manufactured under ISO-certified processes that ensure precision, safety, and consistent quality control.
+          </p>
         </div>
-      </div><!-- End ISO Standards -->
+      </div>
+      <!-- End ISO Standards -->
 
       <!-- Eco-Friendly -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-        <div class="team-member p-4 shadow-sm bg-white rounded-3 w-100">
-          <div class="member-img mb-3">
-            <img src="assets/img/cert-eco.jpg" alt="" width="100" height="100">
+      <div class="col-lg-4 col-md-6">
+        <div class="quality-card h-100 text-center p-4 bg-white shadow-sm rounded-4 hover-scale" data-aos="fade-up" data-aos-delay="350">
+          <div class="quality-icon mb-3">
+            <img src="assets/img/cert-eco.jpg" alt="Eco-Friendly" class="rounded-circle shadow-sm" width="90" height="90">
           </div>
-          <div class="member-info">
-            <h4>Eco-Friendly</h4>
-            <p class="mb-0">
-              Sustainable timber sourcing and green manufacturing practices for a responsible future.
-            </p>
-          </div>
+          <h4 class="fw-semibold mb-2">Eco-Friendly</h4>
+          <p class="mb-0 small text-muted">
+            Sustainable timber sourcing and low-emission manufacturing for a greener, more responsible future.
+          </p>
         </div>
-      </div><!-- End Eco-Friendly -->
+      </div>
+      <!-- End Eco-Friendly -->
 
     </div>
   </div>
+</section>
 
-</section><!-- /Quality & Certification Section -->
+<!-- Inline Styling for the Section -->
+<style>
+  #quality {
+    background: #f9fbff;
+    position: relative;
+  }
+
+  #quality .quality-card {
+    transition: all 0.35s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  #quality .quality-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  #quality .quality-icon img {
+    border: 3px solid #e3e9f4;
+    padding: 5px;
+    background: #fff;
+  }
+
+  #quality h4 {
+    color: #0d6efd;
+    font-weight: 600;
+  }
+
+  #quality p {
+    line-height: 1.6;
+  }
+
+  #quality .section-title p {
+    margin-bottom: 0;
+  }
+</style>
+
 
 
 
@@ -815,10 +941,40 @@
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p><span>Check Our&nbsp;</span> <span class="description-title">Portfolio</span></p>
+          <a href="gallery.html" class="btn btn-outline-primary btn-sm px-4 mt-3 py-2 shadow-sm custom-outline-btn">
+            <i class="bi bi-info-circle me-1"></i> View Full Gallery
+          </a>
       </div><!-- End Section Title -->
 
       <div class="container">
+        <style>
+          /* Make portfolio filters scrollable horizontally */
+/* Horizontally scrollable and center-aligned portfolio filters */
+.portfolio-filters {
+  display: flex;
+  justify-content: center; /* Center items when content fits */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  padding: 8px 0;
+  gap: 10px;
+}
 
+.portfolio-filters::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome/Safari */
+}
+
+/* Ensure items stay in one line and centered */
+.portfolio-filters li {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  text-align: center;
+  padding: 6px 14px;
+}
+
+
+        </style>
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
@@ -833,8 +989,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-1.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
+                <h4>Plywood 1</h4>
+                <p>Premium quality plywood for all your needs.</p>
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-1.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
@@ -843,9 +999,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>Plywood 2</h4>
+                <p>Premium quality plywood for all your needs.</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Plywood 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
@@ -853,9 +1009,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-3.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>Ocuma Plywood</h4>
+                <p>Premium quality plywood for all your needs.</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.png" title="Ocuma Plywood" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
@@ -863,9 +1019,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-4.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.png" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>Ocuma Plywood</h4>
+                <p>Premium quality plywood for all your needs.</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.png" title="Ocuma Plywood" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
@@ -873,9 +1029,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-5.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.png" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>Ocuma Plywood</h4>
+                <p>Premium quality plywood for all your needs.</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.png" title="Ocuma Plywood" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
@@ -883,9 +1039,9 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-6.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.png" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>gurjan Plywood</h4>
+                <p>Premium quality plywood for all your needs.</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.png" title="gurjan Plywood" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
@@ -1102,8 +1258,17 @@
                   <p>unitedboardsandchem@gmail.com</p>
                 </div>
               </div><!-- End Info Item -->
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="map-container" style="position: relative; overflow: hidden; border-radius: 12px;">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.071385758111!2d74.9846999!3d12.577544600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba49d6da3c7f8cb%3A0xcf238d2f87111e39!2sUnited%20Boards%20%26%20Chem!5e0!3m2!1sen!2sin!4v1761681532475!5m2!1sen!2sin"
+                  width="100%"
+                  height="350"
+                  style="border: 0; border-radius: 12px;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
             </div>
           </div>
 
@@ -1240,10 +1405,10 @@ Message: ${message}`;
           <h4>Follow Us</h4>
           <p>Stay connected with United Boards & Chem on social media for updates and product highlights.</p>
           <div class="social-links d-flex">
-            <a href=""><i class="bi bi-whatsapp"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-google"></i></a>
+            <a href="https://wa.me/919745601881"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/UnitedBoardsAndChem"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/UnitedBoardsAndChem"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.google.com/search?q=United+Boards+%26+Chem"><i class="bi bi-google"></i></a>
           </div>
         </div>
 
