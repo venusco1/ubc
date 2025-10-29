@@ -119,9 +119,9 @@
           <ul>
             <li><a href="index.html#hero" class="">Home</a></li>
             <li><a href="index.html#about">About</a></li>
-            <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li class="dropdown"><a href="#"><span>Ocuma Series</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <li class="dropdown"><a><span>Ocuma Series</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
                       <li><a href="ocuma.html#ocuma-semi-commercial">Ocuma Semi Commercial</a></li>
                       <li><a href="ocuma.html#ocuma-semi-dipping">Ocuma Semi Dipping</a></li>
@@ -130,7 +130,7 @@
                   </ul>
                 </li>
 
-                <li class="dropdown"><a href="#"><span>Gurjan Series</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <li class="dropdown"><a><span>Gurjan Series</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
                     <li><a href="gurjan.html#gurjan-semi-commercial">Gurjan Semi Commercial</a></li>
                     <li><a href="gurjan.html#gurjan-semi-dipping">Gurjan Semi Dipping</a></li>
@@ -156,96 +156,122 @@
 
   <main class="main">
 
-<!-- Gallery Section -->
-<section id="gallery" class="portfolio section">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Gallery</h2>
-    <p><span>Explore Our&nbsp;</span> <span class="description-title">Work & Products</span></p>
-  </div><!-- End Section Title -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p><span>Check Our&nbsp;</span> <span class="description-title">Portfolio</span></p>
+      </div><!-- End Section Title -->
 
-  <div class="container">
+      <div class="container">
+        <style>
+          /* Make portfolio filters scrollable horizontally */
+/* Horizontally scrollable and center-aligned portfolio filters */
+.portfolio-filters {
+  display: flex;
+  justify-content: center; /* Center items when content fits */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  padding: 8px 0;
+  gap: 10px;
+}
 
-    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+.portfolio-filters::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome/Safari */
+}
 
-      <!-- Gallery Filters -->
-      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-        <li data-filter="*" class="filter-active">All</li>
-        <li data-filter=".filter-factory">Factory & Production</li>
-        <li data-filter=".filter-products">Products</li>
-        <li data-filter=".filter-team">Team & Facilities</li>
-      </ul><!-- End Gallery Filters -->
+/* Ensure items stay in one line and centered */
+.portfolio-filters li {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  text-align: center;
+  padding: 6px 14px;
+}
 
-      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-        <!-- Factory Image 1 -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-factory">
-          <img src="assets/img/portfolio/product-1.png" class="img-fluid" alt="Plywood factory production unit">
-          <div class="portfolio-info">
-            <h4>Factory Production</h4>
-            <p>Precision cutting and pressing process at our Gurjan plywood unit.</p>
-            <a href="assets/img/portfolio/product-1.png" title="Factory Production" data-gallery="gallery-factory" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
+        </style>
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-        <!-- Factory Image 2 -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-factory">
-          <img src="assets/img/portfolio/product-2.png" class="img-fluid" alt="Plywood manufacturing machinery">
-          <div class="portfolio-info">
-            <h4>Machinery & Equipment</h4>
-            <p>Advanced equipment ensuring consistent plywood quality.</p>
-            <a href="assets/img/portfolio/product-2.png" title="Machinery & Equipment" data-gallery="gallery-factory" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Plywoods</li>
+            <li data-filter=".filter-product">Gurjan</li>
+            <li data-filter=".filter-branding">Ocuma</li>
+          </ul><!-- End Portfolio Filters -->
 
-        <!-- Product Image 1 -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-products">
-          <img src="assets/img/portfolio/product-3.png" class="img-fluid" alt="Gurjan plywood sheets">
-          <div class="portfolio-info">
-            <h4>Gurjan Plywood</h4>
-            <p>Durable and smooth-finish Gurjan plywood sheets ready for dispatch.</p>
-            <a href="assets/img/portfolio/product-3.png" title="Gurjan Plywood" data-gallery="gallery-products" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-        <!-- Product Image 2 -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-products">
-          <img src="assets/img/portfolio/product-4.png" class="img-fluid" alt="Ocuma plywood products">
-          <div class="portfolio-info">
-            <h4>Ocuma Plywood</h4>
-            <p>High-quality Ocuma plywood — ideal for interiors and furniture.</p>
-            <a href="assets/img/portfolio/product-4.png" title="Ocuma Plywood" data-gallery="gallery-products" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Plywood 1</h4>
+                <p>Premium quality plywood for all your needs.</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-        <!-- Team Image -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-team">
-          <img src="assets/img/portfolio/product-5.png" class="img-fluid" alt="United Boards & Chem team">
-          <div class="portfolio-info">
-            <h4>Our Team</h4>
-            <p>Dedicated professionals behind United Boards & Chem’s quality production.</p>
-            <a href="assets/img/portfolio/product-5.png" title="Our Team" data-gallery="gallery-team" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Plywood 2</h4>
+                <p>Premium quality plywood for all your needs.</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Plywood 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-        <!-- Storage Image -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-factory">
-          <img src="assets/img/portfolio/product-6.png" class="img-fluid" alt="Plywood storage area">
-          <div class="portfolio-info">
-            <h4>Storage & Dispatch</h4>
-            <p>Well-organized storage ensuring timely plywood delivery.</p>
-            <a href="assets/img/portfolio/product-6.png" title="Storage & Dispatch" data-gallery="gallery-factory" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          </div>
-        </div><!-- End Gallery Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ocuma Plywood</h4>
+                <p>Premium quality plywood for all your needs.</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.png" title="Ocuma Plywood" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-      </div><!-- End Gallery Container -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ocuma Plywood</h4>
+                <p>Premium quality plywood for all your needs.</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.png" title="Ocuma Plywood" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-    </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ocuma Plywood</h4>
+                <p>Premium quality plywood for all your needs.</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.png" title="Ocuma Plywood" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-  </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>gurjan Plywood</h4>
+                <p>Premium quality plywood for all your needs.</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.png" title="gurjan Plywood" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-</section><!-- /Gallery Section -->
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
 
 
   </main>
