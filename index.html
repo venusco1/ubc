@@ -268,42 +268,164 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section position-relative text-white" style="padding: 0;">
 
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-12 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start" data-aos="zoom-out">
-            <h1>Welcome to <br><span>United Boards & Chem</span></h1>
+    <!-- Background Image Carousel -->
+    <div id="heroBgCarousel" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
 
-            <!-- Hero text carousel (3 messages) -->
-            <div id="heroTextCarousel" class="carousel slide w-100 my-3 px-3" data-bs-ride="carousel" data-bs-interval="4500" aria-label="Hero messages">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <p class="lead mb-3">Premium-quality plywood products with precision and care.</p>
-                </div>
-                <div class="carousel-item">
-                  <p class="lead mb-3">Durable Okuma and Gurjan plywood tailored for professionals.</p>
-                </div>
-                <div class="carousel-item">
-                  <p class="lead mb-3">Trusted by furniture makers across South India.</p>
-                </div>
-              </div>
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <picture>
+            <source media="(max-width: 768px)" srcset="assets/img/hero-bg-1-mobile.png">
+            <img src="assets/img/hero-bg-1.jpg" class="d-block w-100" alt="Factory View">
+          </picture>
+        </div>
 
-              <!-- indicators intentionally removed to keep carousel auto-rotating without visible dots -->
-            </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <picture>
+            <source media="(max-width: 768px)" srcset="assets/img/hero-bg-2-mobile.png">
+            <img src="assets/img/hero-bg-2.jpg" class="d-block w-100" alt="Plywood Display">
+          </picture>
+        </div>
 
-            <div class="d-flex justify-content-center justify-content-lg-start">
-              <a href="index.html#products" class="btn-get-started me-3">Explore More</a>
-              <a href="index.html#contact" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-telephone"></i><span class="ms-3">Contact Us</span></a>
-              <!-- <a href="https://www.youtube.com" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span class="ms-2">Watch Video</span></a> -->
-            </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <picture>
+            <source media="(max-width: 768px)" srcset="assets/img/hero-bg-3-mobile.png">
+            <img src="assets/img/hero-bg-3.jpg" class="d-block w-100" alt="Production Line">
+          </picture>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay position-absolute top-0 start-0 w-100"></div>
+
+    <!-- Hero Content -->
+    <div class="container position-relative z-2 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start min-vh-100" data-aos="fade-up" data-aos-delay="100">
+
+      <h1 class="fw-bold display-4 display-md-3 mb-3 lh-sm fade-text">
+        <span class="text-white">Welcome to</span> <br><span class="text-primary">United Boards & Chem</span>
+      </h1>
+
+      <!-- Rotating Text -->
+      <div id="heroTextCarousel" class="carousel slide my-3" data-bs-ride="carousel" data-bs-interval="4500">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="lead fw-light fade-text">Premium-quality plywood products crafted with precision and care.</p>
+          </div>
+          <div class="carousel-item">
+            <p class="lead fw-light fade-text">Durable Okuma and Gurjan plywood designed for professionals.</p>
+          </div>
+          <div class="carousel-item">
+            <p class="lead fw-light fade-text">Trusted by furniture makers across South India.</p>
           </div>
         </div>
       </div>
 
-    </section><!-- /Hero Section -->
+      <!-- Buttons -->
+      <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mt-3 fade-text">
+        <a href="#products" class="btn btn-primary btn-lg px-4 rounded-pill shadow-lg">Explore More</a>
+        <a href="#contact" class="btn btn-outline-light btn-lg px-4 rounded-pill d-flex align-items-center shadow-lg">
+          <i class="bi bi-telephone me-2"></i> Contact Us
+        </a>
+      </div>
+    </div>
 
+    <!-- Styles -->
+    <style>
+      .hero-section {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .hero-section img {
+        object-fit: cover;
+        height: 100vh;
+        filter: brightness(50%);
+        transition: transform 10s ease-in-out;
+      }
+
+      .carousel-item.active img {
+        transform: scale(1.08);
+      }
+
+      .overlay {
+        background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.25));
+        z-index: 1;
+      }
+
+      .fade-text {
+        animation: fadeSlideIn 1.2s ease forwards;
+      }
+
+      @keyframes fadeSlideIn {
+        0% {
+          opacity: 0;
+          transform: translateY(25px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .btn-primary {
+        background-color: #f4b400;
+        border: none;
+        color: #000000;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: #ffcf3f;
+        transform: translateY(-3px);
+      }
+
+      .btn-outline-light {
+        border: 2px solid #fff;
+        color: #fff;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .btn-outline-light:hover {
+        background-color: #fff;
+        color: #111;
+        transform: translateY(-3px);
+      }
+
+      @media (max-width: 768px) {
+        .hero-section {
+          text-align: center;
+        }
+
+        .hero-section h1 {
+          font-size: 2rem;
+          line-height: 1.3;
+        }
+
+        .hero-section p.lead {
+          font-size: 1rem;
+        }
+
+        .btn {
+          font-size: 0.9rem;
+          padding: 10px 20px;
+        }
+      }
+    </style>
+
+  </section>
+  <!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section light-background mt-0">
